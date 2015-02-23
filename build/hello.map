@@ -1,0 +1,1415 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (atexit)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (exit)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (__libc_fini_array)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (__libc_init_array)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (memset)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+                              src/syscalls.o (errno)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o) (__register_exitproc)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o) (__call_exitprocs)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o) (_free_r)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o) (__malloc_current_mallinfo)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o) (__malloc_lock)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o) (_sbrk_r)
+./libs/libBSP.a(stm32f4xx_usart.o)
+                              src/syscalls.o (USART_SendData)
+./libs/libBSP.a(stm32f4xx_rcc.o)
+                              ./libs/libBSP.a(stm32f4xx_usart.o) (RCC_GetClocksFreq)
+./libs/libBSP.a(stm32f4xx_gpio.o)
+                              src/main.o (GPIO_Init)
+./libs/libBSP.a(system_stm32f4xx.o)
+                              src/startup.o (SystemInit)
+./libs/libBSP.a(ssd1963.o)    src/main.o (SSD1963_Init)
+./libs/libBSP.a(carme.o)      src/startup.o (CARME_Init)
+./libs/libBSP.a(stm32f4xx_fsmc.o)
+                              ./libs/libBSP.a(carme.o) (FSMC_NORSRAMDeInit)
+./libs/libBSP.a(ssd1963_lld.o)
+                              ./libs/libBSP.a(ssd1963.o) (SSD1963_LLD_Init)
+/usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcpy.o)
+                              ./libs/libBSP.a(carme.o) (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+gpio                0x8               src/main.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .data.__dso_handle
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .text          0x0000000000000000       0x68 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+ .text          0x0000000000000000       0x14 src/startup.o
+ .data          0x0000000000000000        0x0 src/startup.o
+ .bss           0x0000000000000000        0x0 src/startup.o
+ .text          0x0000000000000000        0x0 src/syscalls.o
+ .data          0x0000000000000000        0x0 src/syscalls.o
+ .bss           0x0000000000000000        0x0 src/syscalls.o
+ .bss.__env     0x0000000000000000        0x4 src/syscalls.o
+ .data.environ  0x0000000000000000        0x4 src/syscalls.o
+ .text.initialise_monitor_handles
+                0x0000000000000000        0xc src/syscalls.o
+ .text._getpid  0x0000000000000000       0x10 src/syscalls.o
+ .text._kill    0x0000000000000000       0x24 src/syscalls.o
+ .text._exit    0x0000000000000000       0x14 src/syscalls.o
+ .text._write   0x0000000000000000       0x64 src/syscalls.o
+ .text._sbrk    0x0000000000000000       0x68 src/syscalls.o
+ .text._close   0x0000000000000000       0x18 src/syscalls.o
+ .text._fstat   0x0000000000000000       0x20 src/syscalls.o
+ .text._isatty  0x0000000000000000       0x18 src/syscalls.o
+ .text._lseek   0x0000000000000000       0x1c src/syscalls.o
+ .text._read    0x0000000000000000       0x74 src/syscalls.o
+ .text._open    0x0000000000000000       0x1c src/syscalls.o
+ .text._wait    0x0000000000000000       0x24 src/syscalls.o
+ .text._unlink  0x0000000000000000       0x24 src/syscalls.o
+ .text._times   0x0000000000000000       0x18 src/syscalls.o
+ .text._stat    0x0000000000000000       0x20 src/syscalls.o
+ .text._link    0x0000000000000000       0x24 src/syscalls.o
+ .text._fork    0x0000000000000000       0x1c src/syscalls.o
+ .text._execve  0x0000000000000000       0x28 src/syscalls.o
+ .bss.heap_end.9252
+                0x0000000000000000        0x4 src/syscalls.o
+ .debug_info    0x0000000000000000      0x7e6 src/syscalls.o
+ .debug_abbrev  0x0000000000000000      0x1ef src/syscalls.o
+ .debug_aranges
+                0x0000000000000000       0xb0 src/syscalls.o
+ .debug_ranges  0x0000000000000000       0xa0 src/syscalls.o
+ .debug_line    0x0000000000000000      0x2a8 src/syscalls.o
+ .debug_str     0x0000000000000000      0x42a src/syscalls.o
+ .comment       0x0000000000000000       0x34 src/syscalls.o
+ .debug_frame   0x0000000000000000      0x2ec src/syscalls.o
+ .ARM.attributes
+                0x0000000000000000       0x37 src/syscalls.o
+ .text          0x0000000000000000        0x0 src/main.o
+ .data          0x0000000000000000        0x0 src/main.o
+ .bss           0x0000000000000000        0x0 src/main.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+ .text.memset   0x0000000000000000       0x9c /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x0000000000000000       0x1c /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x0000000000000000       0x88 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ .debug_frame   0x0000000000000000       0x58 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ COMMON         0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x0000000000000000       0xd4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+ .text._malloc_trim_r
+                0x0000000000000000       0x9c /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+ .text._free_r  0x0000000000000000      0x1b0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+ .debug_frame   0x0000000000000000       0x74 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .text._malloc_r
+                0x0000000000000000      0x524 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .data.__malloc_av_
+                0x0000000000000000      0x408 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .data.__malloc_trim_threshold
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .bss.__malloc_max_total_mem
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .bss.__malloc_max_sbrked_mem
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .bss.__malloc_top_pad
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .bss.__malloc_current_mallinfo
+                0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .data.__malloc_sbrk_base
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .debug_frame   0x0000000000000000       0x58 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+ .text.__malloc_lock
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+ .text.__malloc_unlock
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000000000       0x30 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x0000000000000000       0x24 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtend.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtend.o
+ .jcr           0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtend.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtn.o
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_DeInit
+                0x0000000000000000      0x114 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_Init
+                0x0000000000000000      0x174 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_StructInit
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_ClockInit
+                0x0000000000000000       0x54 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_ClockStructInit
+                0x0000000000000000       0x2c ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_Cmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_SetPrescaler
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_OverSampling8Cmd
+                0x0000000000000000       0x44 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_OneBitMethodCmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_SendData
+                0x0000000000000000       0x24 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_ReceiveData
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_SetAddress
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_ReceiverWakeUpCmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_WakeUpConfig
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_LINBreakDetectLengthConfig
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_LINCmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_SendBreak
+                0x0000000000000000       0x24 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_HalfDuplexCmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_SetGuardTime
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_SmartCardCmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_SmartCardNACKCmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_IrDAConfig
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_IrDACmd
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_DMACmd
+                0x0000000000000000       0x48 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_ITConfig
+                0x0000000000000000       0x90 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_GetFlagStatus
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_ClearFlag
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_GetITStatus
+                0x0000000000000000       0xb0 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text.USART_ClearITPendingBit
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .debug_info    0x0000000000000000      0x9c6 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .debug_abbrev  0x0000000000000000      0x157 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .debug_aranges
+                0x0000000000000000      0x100 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .debug_ranges  0x0000000000000000       0xf0 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .debug_line    0x0000000000000000      0x4dc ./libs/libBSP.a(stm32f4xx_usart.o)
+ .debug_str     0x0000000000000000      0x6de ./libs/libBSP.a(stm32f4xx_usart.o)
+ .comment       0x0000000000000000       0x83 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .ARM.attributes
+                0x0000000000000000       0x37 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .debug_frame   0x0000000000000000      0x344 ./libs/libBSP.a(stm32f4xx_usart.o)
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .data.APBAHBPrescTable
+                0x0000000000000000       0x10 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_DeInit
+                0x0000000000000000       0x70 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_HSEConfig
+                0x0000000000000000       0x24 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_WaitForHSEStartUp
+                0x0000000000000000       0x50 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_AdjustHSICalibrationValue
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_HSICmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_LSEConfig
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_LSICmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLConfig
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLCmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLI2SConfig
+                0x0000000000000000       0x28 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLI2SCmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLSAIConfig
+                0x0000000000000000       0x30 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLSAICmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_ClockSecuritySystemCmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_MCO1Config
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_MCO2Config
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_SYSCLKConfig
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_GetSYSCLKSource
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_HCLKConfig
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PCLK1Config
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_PCLK2Config
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_GetClocksFreq
+                0x0000000000000000      0x154 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_RTCCLKConfig
+                0x0000000000000000       0x5c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_RTCCLKCmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_BackupResetCmd
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_I2SCLKConfig
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIPLLI2SClkDivConfig
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIPLLSAIClkDivConfig
+                0x0000000000000000       0x40 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIBlockACLKConfig
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIBlockBCLKConfig
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_LTDCCLKDivConfig
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_TIMCLKPresConfig
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB2PeriphClockCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_APB1PeriphClockCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB2PeriphResetCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB3PeriphResetCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_APB1PeriphResetCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_APB2PeriphResetCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB1PeriphClockLPModeCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB2PeriphClockLPModeCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB3PeriphClockLPModeCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_APB1PeriphClockLPModeCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_APB2PeriphClockLPModeCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_ITConfig
+                0x0000000000000000       0x48 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_GetFlagStatus
+                0x0000000000000000       0x74 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_ClearFlag
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_GetITStatus
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text.RCC_ClearITPendingBit
+                0x0000000000000000       0x20 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text.GPIO_PinLockConfig
+                0x0000000000000000       0x44 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text.GPIO_ReadInputData
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text.GPIO_ReadOutputDataBit
+                0x0000000000000000       0x34 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text.GPIO_ReadOutputData
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text.GPIO_SetBits
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text.GPIO_ResetBits
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text.GPIO_Write
+                0x0000000000000000       0x1c ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(system_stm32f4xx.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(system_stm32f4xx.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(system_stm32f4xx.o)
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 ./libs/libBSP.a(system_stm32f4xx.o)
+ .data.AHBPrescTable
+                0x0000000000000000       0x10 ./libs/libBSP.a(system_stm32f4xx.o)
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0xf8 ./libs/libBSP.a(system_stm32f4xx.o)
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(ssd1963.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(ssd1963.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_WritePixel
+                0x0000000000000000       0x3c ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_ReadPixel
+                0x0000000000000000       0x38 ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_WriteArea
+                0x0000000000000000       0x5c ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_SetTearingCfg
+                0x0000000000000000       0x38 ./libs/libBSP.a(ssd1963.o)
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(carme.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(carme.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(carme.o)
+ .text.CARME_AGPIO_Set
+                0x0000000000000000       0x70 ./libs/libBSP.a(carme.o)
+ .text.CARME_AGPIO_Get
+                0x0000000000000000       0xcc ./libs/libBSP.a(carme.o)
+ .text.CARME_AGPIO_GetMode
+                0x0000000000000000      0x204 ./libs/libBSP.a(carme.o)
+ .text.CARME_LED_Green_Set
+                0x0000000000000000       0x14 ./libs/libBSP.a(carme.o)
+ .text.CARME_LED_Green_Reset
+                0x0000000000000000       0x10 ./libs/libBSP.a(carme.o)
+ .text.CARME_LED_Red_Set
+                0x0000000000000000       0x14 ./libs/libBSP.a(carme.o)
+ .text.CARME_LED_Red_Reset
+                0x0000000000000000       0x10 ./libs/libBSP.a(carme.o)
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_NORSRAMStructInit
+                0x0000000000000000       0xd4 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_NANDDeInit
+                0x0000000000000000       0x5c ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_NANDInit
+                0x0000000000000000       0xcc ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_NANDStructInit
+                0x0000000000000000       0x7c ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_NANDCmd
+                0x0000000000000000       0x6c ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_NANDECCCmd
+                0x0000000000000000       0x6c ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_GetECC
+                0x0000000000000000       0x38 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_PCCARDDeInit
+                0x0000000000000000       0x34 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_PCCARDInit
+                0x0000000000000000       0xac ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_PCCARDStructInit
+                0x0000000000000000       0x84 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_PCCARDCmd
+                0x0000000000000000       0x3c ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_ITConfig
+                0x0000000000000000       0xa0 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_GetFlagStatus
+                0x0000000000000000       0x64 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_ClearFlag
+                0x0000000000000000       0x5c ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_GetITStatus
+                0x0000000000000000       0x80 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text.FSMC_ClearITPendingBit
+                0x0000000000000000       0x64 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .text          0x0000000000000000        0x0 ./libs/libBSP.a(ssd1963_lld.o)
+ .data          0x0000000000000000        0x0 ./libs/libBSP.a(ssd1963_lld.o)
+ .bss           0x0000000000000000        0x0 ./libs/libBSP.a(ssd1963_lld.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000100000 xr
+RAM              0x0000000020000000 0x0000000000020000 xrw
+MEMORY_B1        0x0000000060000000 0x0000000000000000 xr
+CCMRAM           0x0000000010000000 0x0000000000010000 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libm.a
+END GROUP
+                0x0000000000001000                malloc_getpagesize_P = 0x1000
+LOAD src/startup.o
+LOAD src/syscalls.o
+LOAD src/main.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtend.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtn.o
+LOAD ./libs/libBSP.a
+LOAD ./libs/libsGUI.a
+                0x0000000020020000                _estack = 0x20020000
+                0x0000000000001000                _Min_Heap_Size = 0x1000
+                0x0000000000001000                _Min_Stack_Size = 0x1000
+
+.isr_vector     0x0000000008000000      0x188
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x188 src/startup.o
+                0x0000000008000000                g_pfnVectors
+                0x0000000008000188                . = ALIGN (0x4)
+
+.text           0x0000000008000188     0x178c
+                0x0000000008000188                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000000008000188      0x134 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcpy.o)
+                0x0000000008000188                memcpy
+ *(.text*)
+ .text.__do_global_dtors_aux
+                0x00000000080002bc       0x28 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .text.frame_dummy
+                0x00000000080002e4       0x34 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .text.Reset_Handler
+                0x0000000008000318       0x4c src/startup.o
+                0x0000000008000318                Reset_Handler
+ .text.Default_Handler
+                0x0000000008000364       0x7c src/startup.o
+                0x000000000800036c                RTC_Alarm_IRQHandler
+                0x000000000800036c                HASH_RNG_IRQHandler
+                0x000000000800036c                EXTI2_IRQHandler
+                0x000000000800036c                TIM8_CC_IRQHandler
+                0x000000000800036c                DebugMon_Handler
+                0x000000000800036c                TIM1_CC_IRQHandler
+                0x000000000800036c                DMA2_Stream5_IRQHandler
+                0x000000000800036c                HardFault_Handler
+                0x000000000800036c                DMA1_Stream5_IRQHandler
+                0x000000000800036c                SysTick_Handler
+                0x000000000800036c                PVD_IRQHandler
+                0x000000000800036c                SDIO_IRQHandler
+                0x000000000800036c                TAMP_STAMP_IRQHandler
+                0x000000000800036c                PendSV_Handler
+                0x000000000800036c                NMI_Handler
+                0x000000000800036c                CAN2_RX1_IRQHandler
+                0x000000000800036c                EXTI3_IRQHandler
+                0x000000000800036c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x000000000800036c                TIM1_UP_TIM10_IRQHandler
+                0x000000000800036c                TIM8_UP_TIM13_IRQHandler
+                0x000000000800036c                I2C3_ER_IRQHandler
+                0x000000000800036c                EXTI0_IRQHandler
+                0x000000000800036c                I2C2_EV_IRQHandler
+                0x000000000800036c                DMA1_Stream2_IRQHandler
+                0x000000000800036c                CAN1_RX0_IRQHandler
+                0x000000000800036c                FPU_IRQHandler
+                0x000000000800036c                OTG_HS_WKUP_IRQHandler
+                0x000000000800036c                UsageFault_Handler
+                0x000000000800036c                CAN2_SCE_IRQHandler
+                0x000000000800036c                DMA2_Stream2_IRQHandler
+                0x000000000800036c                SPI1_IRQHandler
+                0x000000000800036c                TIM6_DAC_IRQHandler
+                0x000000000800036c                TIM1_BRK_TIM9_IRQHandler
+                0x000000000800036c                DCMI_IRQHandler
+                0x000000000800036c                CAN2_RX0_IRQHandler
+                0x000000000800036c                DMA2_Stream3_IRQHandler
+                0x000000000800036c                USART6_IRQHandler
+                0x000000000800036c                USART3_IRQHandler
+                0x000000000800036c                CRYP_IRQHandler
+                0x000000000800036c                CAN1_RX1_IRQHandler
+                0x000000000800036c                UART5_IRQHandler
+                0x000000000800036c                DMA2_Stream0_IRQHandler
+                0x000000000800036c                vApplicationMallocFailedHook
+                0x000000000800036c                TIM4_IRQHandler
+                0x000000000800036c                I2C1_EV_IRQHandler
+                0x000000000800036c                DMA1_Stream6_IRQHandler
+                0x000000000800036c                DMA1_Stream1_IRQHandler
+                0x000000000800036c                UART4_IRQHandler
+                0x000000000800036c                TIM3_IRQHandler
+                0x000000000800036c                RCC_IRQHandler
+                0x000000000800036c                TIM8_BRK_TIM12_IRQHandler
+                0x000000000800036c                Default_Handler
+                0x000000000800036c                EXTI15_10_IRQHandler
+                0x000000000800036c                ADC_IRQHandler
+                0x000000000800036c                DMA1_Stream7_IRQHandler
+                0x000000000800036c                TIM7_IRQHandler
+                0x000000000800036c                CAN2_TX_IRQHandler
+                0x000000000800036c                TIM5_IRQHandler
+                0x000000000800036c                DMA2_Stream7_IRQHandler
+                0x000000000800036c                I2C3_EV_IRQHandler
+                0x000000000800036c                vApplicationStackOverflowHook
+                0x000000000800036c                EXTI9_5_IRQHandler
+                0x000000000800036c                RTC_WKUP_IRQHandler
+                0x000000000800036c                ETH_WKUP_IRQHandler
+                0x000000000800036c                SPI2_IRQHandler
+                0x000000000800036c                OTG_HS_EP1_IN_IRQHandler
+                0x000000000800036c                MemManage_Handler
+                0x000000000800036c                DMA1_Stream0_IRQHandler
+                0x000000000800036c                CAN1_TX_IRQHandler
+                0x000000000800036c                SVC_Handler
+                0x000000000800036c                EXTI4_IRQHandler
+                0x000000000800036c                FSMC_IRQHandler
+                0x000000000800036c                ETH_IRQHandler
+                0x000000000800036c                OTG_HS_EP1_OUT_IRQHandler
+                0x000000000800036c                WWDG_IRQHandler
+                0x000000000800036c                TIM2_IRQHandler
+                0x000000000800036c                OTG_FS_WKUP_IRQHandler
+                0x000000000800036c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x000000000800036c                OTG_HS_IRQHandler
+                0x000000000800036c                EXTI1_IRQHandler
+                0x000000000800036c                USART2_IRQHandler
+                0x000000000800036c                I2C2_ER_IRQHandler
+                0x000000000800036c                DMA2_Stream1_IRQHandler
+                0x000000000800036c                CAN1_SCE_IRQHandler
+                0x000000000800036c                FLASH_IRQHandler
+                0x000000000800036c                DMA2_Stream4_IRQHandler
+                0x000000000800036c                BusFault_Handler
+                0x000000000800036c                USART1_IRQHandler
+                0x000000000800036c                OTG_FS_IRQHandler
+                0x000000000800036c                SPI3_IRQHandler
+                0x000000000800036c                DMA1_Stream4_IRQHandler
+                0x000000000800036c                I2C1_ER_IRQHandler
+                0x000000000800036c                DMA2_Stream6_IRQHandler
+                0x000000000800036c                DMA1_Stream3_IRQHandler
+ .text.LCD_Init
+                0x00000000080003e0        0xc src/main.o
+ .text.LCD_FillArea
+                0x00000000080003ec       0x38 src/main.o
+ .text.LCD_Clear
+                0x0000000008000424       0x24 src/main.o
+ .text.init_gpio
+                0x0000000008000448      0x130 src/main.o
+                0x0000000008000448                init_gpio
+ .text.main     0x0000000008000578       0xec src/main.o
+                0x0000000008000578                main
+ .text.atexit   0x0000000008000664        0xc /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+                0x0000000008000664                atexit
+ .text.__libc_fini_array
+                0x0000000008000670       0x2c /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+                0x0000000008000670                __libc_fini_array
+ .text.__libc_init_array
+                0x000000000800069c       0x50 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+                0x000000000800069c                __libc_init_array
+ .text.__register_exitproc
+                0x00000000080006ec       0xa8 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+                0x00000000080006ec                __register_exitproc
+ .text.startup.register_fini
+                0x0000000008000794       0x14 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ .text.RCC_AHB1PeriphClockCmd
+                0x00000000080007a8       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+                0x00000000080007a8                RCC_AHB1PeriphClockCmd
+ .text.RCC_AHB3PeriphClockCmd
+                0x00000000080007e4       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+                0x00000000080007e4                RCC_AHB3PeriphClockCmd
+ .text.RCC_APB2PeriphClockCmd
+                0x0000000008000820       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+                0x0000000008000820                RCC_APB2PeriphClockCmd
+ .text.RCC_AHB1PeriphResetCmd
+                0x000000000800085c       0x3c ./libs/libBSP.a(stm32f4xx_rcc.o)
+                0x000000000800085c                RCC_AHB1PeriphResetCmd
+ .text.GPIO_DeInit
+                0x0000000008000898      0x164 ./libs/libBSP.a(stm32f4xx_gpio.o)
+                0x0000000008000898                GPIO_DeInit
+ .text.GPIO_Init
+                0x00000000080009fc      0x11c ./libs/libBSP.a(stm32f4xx_gpio.o)
+                0x00000000080009fc                GPIO_Init
+ .text.GPIO_StructInit
+                0x0000000008000b18       0x34 ./libs/libBSP.a(stm32f4xx_gpio.o)
+                0x0000000008000b18                GPIO_StructInit
+ .text.GPIO_ReadInputDataBit
+                0x0000000008000b4c       0x34 ./libs/libBSP.a(stm32f4xx_gpio.o)
+                0x0000000008000b4c                GPIO_ReadInputDataBit
+ .text.GPIO_WriteBit
+                0x0000000008000b80       0x30 ./libs/libBSP.a(stm32f4xx_gpio.o)
+                0x0000000008000b80                GPIO_WriteBit
+ .text.GPIO_ToggleBits
+                0x0000000008000bb0       0x24 ./libs/libBSP.a(stm32f4xx_gpio.o)
+                0x0000000008000bb0                GPIO_ToggleBits
+ .text.GPIO_PinAFConfig
+                0x0000000008000bd4       0x8c ./libs/libBSP.a(stm32f4xx_gpio.o)
+                0x0000000008000bd4                GPIO_PinAFConfig
+ .text.SystemInit
+                0x0000000008000c60       0x68 ./libs/libBSP.a(system_stm32f4xx.o)
+                0x0000000008000c60                SystemInit
+ .text.SetSysClock
+                0x0000000008000cc8       0xf4 ./libs/libBSP.a(system_stm32f4xx.o)
+ .text.SSD1963_WriteCommand
+                0x0000000008000dbc       0x1c ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_WriteData
+                0x0000000008000dd8       0x1c ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_ReadData
+                0x0000000008000df4       0x18 ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_DisplayOn
+                0x0000000008000e0c        0xc ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_Delay
+                0x0000000008000e18       0x34 ./libs/libBSP.a(ssd1963.o)
+ .text.SSD1963_Init
+                0x0000000008000e4c      0x144 ./libs/libBSP.a(ssd1963.o)
+                0x0000000008000e4c                SSD1963_Init
+ .text.SSD1963_SetArea
+                0x0000000008000f90       0x80 ./libs/libBSP.a(ssd1963.o)
+                0x0000000008000f90                SSD1963_SetArea
+ .text.SSD1963_FillArea
+                0x0000000008001010       0x58 ./libs/libBSP.a(ssd1963.o)
+                0x0000000008001010                SSD1963_FillArea
+ .text.SSD1963_GetDeviceDescriptorBlock
+                0x0000000008001068       0x38 ./libs/libBSP.a(ssd1963.o)
+                0x0000000008001068                SSD1963_GetDeviceDescriptorBlock
+ .text.CARME_Init
+                0x00000000080010a0       0xc0 ./libs/libBSP.a(carme.o)
+                0x00000000080010a0                CARME_Init
+ .text.CARME_FSMC_GPIO_Init
+                0x0000000008001160       0x54 ./libs/libBSP.a(carme.o)
+ .text.CARME_FSMC_Init
+                0x00000000080011b4      0x164 ./libs/libBSP.a(carme.o)
+ .text.CARME_AGPIO_Init
+                0x0000000008001318       0x24 ./libs/libBSP.a(carme.o)
+ .text.CARME_GPIO_Init
+                0x000000000800133c      0x1f4 ./libs/libBSP.a(carme.o)
+                0x000000000800133c                CARME_GPIO_Init
+ .text.FSMC_NORSRAMDeInit
+                0x0000000008001530       0x58 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+                0x0000000008001530                FSMC_NORSRAMDeInit
+ .text.FSMC_NORSRAMInit
+                0x0000000008001588      0x134 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+                0x0000000008001588                FSMC_NORSRAMInit
+ .text.FSMC_NORSRAMCmd
+                0x00000000080016bc       0x54 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+                0x00000000080016bc                FSMC_NORSRAMCmd
+ .text.SSD1963_LLD_Init
+                0x0000000008001710       0x3c ./libs/libBSP.a(ssd1963_lld.o)
+                0x0000000008001710                SSD1963_LLD_Init
+ *(.rodata)
+ .rodata        0x000000000800174c      0x1a8 ./libs/libBSP.a(carme.o)
+ *(.rodata*)
+ .rodata.str1.4
+                0x00000000080018f4        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000080018f8        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+                0x00000000080018f8                _global_impure_ptr
+ *(.glue_7)
+ .glue_7        0x00000000080018fc        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000080018fc        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x00000000080018fc        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ *(.init)
+ .init          0x00000000080018fc        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+                0x00000000080018fc                _init
+ .init          0x0000000008001900        0x8 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtn.o
+ *(.fini)
+ .fini          0x0000000008001908        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+                0x0000000008001908                _fini
+ .fini          0x000000000800190c        0x8 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtn.o
+                0x0000000008001914                . = ALIGN (0x4)
+                0x0000000008001914                _etext = .
+
+.vfp11_veneer   0x0000000008001914        0x0
+ .vfp11_veneer  0x0000000008001914        0x0 linker stubs
+
+.v4_bx          0x0000000008001914        0x0
+ .v4_bx         0x0000000008001914        0x0 linker stubs
+
+.iplt           0x0000000008001914        0x0
+ .iplt          0x0000000008001914        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+
+.rel.dyn        0x0000000008001914        0x0
+ .rel.iplt      0x0000000008001914        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008001914        0x0
+                0x0000000008001914                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008001914                __exidx_end = .
+
+.preinit_array  0x0000000008001914        0x0
+                0x0000000008001914                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x0000000008001914                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008001914        0x8
+                0x0000000008001914                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ .init_array.00000
+                0x0000000008001914        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ *(.init_array*)
+ .init_array    0x0000000008001918        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+                0x000000000800191c                PROVIDE (__init_array_end, .)
+
+.fini_array     0x000000000800191c        0x4
+                0x000000000800191c                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x000000000800191c        0x4 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+                0x0000000008001920                PROVIDE (__fini_array_end, .)
+                0x0000000008001920                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000      0x4d8 load address 0x0000000008001920
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ *(.data*)
+ .data.impure_data
+                0x0000000020000000      0x428 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+ .data.CARME_AGPIO_Port_Pin
+                0x0000000020000428       0xa0 ./libs/libBSP.a(carme.o)
+ .data.LCD_Port_Pin
+                0x00000000200004c8       0x10 ./libs/libBSP.a(ssd1963_lld.o)
+                0x00000000200004d8                . = ALIGN (0x4)
+                0x00000000200004d8                _edata = .
+                0x0000000008001df8                _siccmram = LOADADDR (.ccmram)
+
+.jcr            0x00000000200004d8        0x0 load address 0x0000000008001df8
+ .jcr           0x00000000200004d8        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+
+.igot.plt       0x00000000200004d8        0x0 load address 0x0000000008001df8
+ .igot.plt      0x00000000200004d8        0x0 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+
+.ccmram         0x0000000010000000        0x0 load address 0x0000000008001df8
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _sccmram = .
+ *(.ccmram)
+ *(.ccmram*)
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _eccmram = .
+                0x0000000010000000                . = ALIGN (0x4)
+
+.bss            0x00000000200004d8       0x2c
+                0x00000000200004d8                _sbss = .
+                0x00000000200004d8                __bss_start__ = _sbss
+ *(.bss)
+ *(.bss*)
+ .bss.completed.8095
+                0x00000000200004d8        0x1 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ *fill*         0x00000000200004d9        0x3 
+ .bss.object.8100
+                0x00000000200004dc       0x18 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .bss.deviceDescriptorBlock
+                0x00000000200004f4        0x8 ./libs/libBSP.a(ssd1963.o)
+ *(COMMON)
+ COMMON         0x00000000200004fc        0x8 src/main.o
+                0x00000000200004fc                gpio
+                0x0000000020000504                . = ALIGN (0x4)
+                0x0000000020000504                _ebss = .
+                0x0000000020000504                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x0000000020000504     0x2000
+                0x0000000020000504                . = ALIGN (0x4)
+                0x0000000020000504                PROVIDE (end, .)
+                0x0000000020000504                PROVIDE (_end, .)
+                0x0000000020001504                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000504     0x1000 
+                0x0000000020002504                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020001504     0x1000 
+                0x0000000020002504                . = ALIGN (0x4)
+
+.memory_b1_text
+ *(.mb1text)
+ *(.mb1text*)
+ *(.mb1rodata)
+ *(.mb1rodata*)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x2e
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x22 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+ .ARM.attributes
+                0x0000000000000022       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+ .ARM.attributes
+                0x0000000000000054       0x21 src/startup.o
+ .ARM.attributes
+                0x0000000000000075       0x37 src/main.o
+ .ARM.attributes
+                0x00000000000000ac       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000000000de       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+ .ARM.attributes
+                0x0000000000000110       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000142       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000174       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000000000001a6       0x32 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000000001d8       0x22 /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtn.o
+ .ARM.attributes
+                0x00000000000001fa       0x37 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .ARM.attributes
+                0x0000000000000231       0x37 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .ARM.attributes
+                0x0000000000000268       0x37 ./libs/libBSP.a(system_stm32f4xx.o)
+ .ARM.attributes
+                0x000000000000029f       0x37 ./libs/libBSP.a(ssd1963.o)
+ .ARM.attributes
+                0x00000000000002d6       0x37 ./libs/libBSP.a(carme.o)
+ .ARM.attributes
+                0x000000000000030d       0x37 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .ARM.attributes
+                0x0000000000000344       0x37 ./libs/libBSP.a(ssd1963_lld.o)
+OUTPUT(build/hello.elf elf32-littlearm)
+
+.debug_line     0x0000000000000000     0x1e28
+ .debug_line    0x0000000000000000       0x9a src/startup.o
+ .debug_line    0x000000000000009a      0x1a9 src/main.o
+ .debug_line    0x0000000000000243      0x675 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .debug_line    0x00000000000008b8      0x379 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .debug_line    0x0000000000000c31      0x24b ./libs/libBSP.a(system_stm32f4xx.o)
+ .debug_line    0x0000000000000e7c      0x32a ./libs/libBSP.a(ssd1963.o)
+ .debug_line    0x00000000000011a6      0x591 ./libs/libBSP.a(carme.o)
+ .debug_line    0x0000000000001737      0x488 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .debug_line    0x0000000000001bbf      0x269 ./libs/libBSP.a(ssd1963_lld.o)
+
+.debug_info     0x0000000000000000     0x3467
+ .debug_info    0x0000000000000000       0x53 src/startup.o
+ .debug_info    0x0000000000000053      0x3cc src/main.o
+ .debug_info    0x000000000000041f      0xe06 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .debug_info    0x0000000000001225      0x609 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .debug_info    0x000000000000182e      0x5c0 ./libs/libBSP.a(system_stm32f4xx.o)
+ .debug_info    0x0000000000001dee      0x3d7 ./libs/libBSP.a(ssd1963.o)
+ .debug_info    0x00000000000021c5      0x695 ./libs/libBSP.a(carme.o)
+ .debug_info    0x000000000000285a      0x8f9 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .debug_info    0x0000000000003153      0x314 ./libs/libBSP.a(ssd1963_lld.o)
+
+.debug_abbrev   0x0000000000000000      0xc00
+ .debug_abbrev  0x0000000000000000       0x12 src/startup.o
+ .debug_abbrev  0x0000000000000012      0x178 src/main.o
+ .debug_abbrev  0x000000000000018a      0x1bc ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .debug_abbrev  0x0000000000000346      0x1a5 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .debug_abbrev  0x00000000000004eb      0x138 ./libs/libBSP.a(system_stm32f4xx.o)
+ .debug_abbrev  0x0000000000000623      0x19f ./libs/libBSP.a(ssd1963.o)
+ .debug_abbrev  0x00000000000007c2      0x1c0 ./libs/libBSP.a(carme.o)
+ .debug_abbrev  0x0000000000000982      0x172 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .debug_abbrev  0x0000000000000af4      0x10c ./libs/libBSP.a(ssd1963_lld.o)
+
+.debug_aranges  0x0000000000000000      0x4a0
+ .debug_aranges
+                0x0000000000000000       0x28 src/startup.o
+ .debug_aranges
+                0x0000000000000028       0x40 src/main.o
+ .debug_aranges
+                0x0000000000000068      0x1b8 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .debug_aranges
+                0x0000000000000220       0x88 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .debug_aranges
+                0x00000000000002a8       0x30 ./libs/libBSP.a(system_stm32f4xx.o)
+ .debug_aranges
+                0x00000000000002d8       0x80 ./libs/libBSP.a(ssd1963.o)
+ .debug_aranges
+                0x0000000000000358       0x78 ./libs/libBSP.a(carme.o)
+ .debug_aranges
+                0x00000000000003d0       0xb0 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .debug_aranges
+                0x0000000000000480       0x20 ./libs/libBSP.a(ssd1963_lld.o)
+
+.debug_ranges   0x0000000000000000      0x418
+ .debug_ranges  0x0000000000000000       0x20 src/startup.o
+ .debug_ranges  0x0000000000000020       0x30 src/main.o
+ .debug_ranges  0x0000000000000050      0x1a8 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .debug_ranges  0x00000000000001f8       0x78 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .debug_ranges  0x0000000000000270       0x20 ./libs/libBSP.a(system_stm32f4xx.o)
+ .debug_ranges  0x0000000000000290       0x70 ./libs/libBSP.a(ssd1963.o)
+ .debug_ranges  0x0000000000000300       0x68 ./libs/libBSP.a(carme.o)
+ .debug_ranges  0x0000000000000368       0xa0 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .debug_ranges  0x0000000000000408       0x10 ./libs/libBSP.a(ssd1963_lld.o)
+
+.debug_str      0x0000000000000000     0x172b
+ .debug_str     0x0000000000000000      0x33b src/main.o
+                                        0x393 (size before relaxing)
+ .debug_str     0x000000000000033b      0x8bf ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                        0x9e4 (size before relaxing)
+ .debug_str     0x0000000000000bfa      0x168 ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                        0x4ef (size before relaxing)
+ .debug_str     0x0000000000000d62       0xf9 ./libs/libBSP.a(system_stm32f4xx.o)
+                                        0x40e (size before relaxing)
+ .debug_str     0x0000000000000e5b      0x154 ./libs/libBSP.a(ssd1963.o)
+                                        0x336 (size before relaxing)
+ .debug_str     0x0000000000000faf      0x383 ./libs/libBSP.a(carme.o)
+                                        0x738 (size before relaxing)
+ .debug_str     0x0000000000001332      0x3c0 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+                                        0x7d9 (size before relaxing)
+ .debug_str     0x00000000000016f2       0x39 ./libs/libBSP.a(ssd1963_lld.o)
+                                        0x3ce (size before relaxing)
+
+.comment        0x0000000000000000       0xb5
+ .comment       0x0000000000000000       0x33 src/main.o
+                                         0x34 (size before relaxing)
+ .comment       0x0000000000000033       0x82 ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                         0x83 (size before relaxing)
+ .comment       0x00000000000000b5       0x83 ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .comment       0x00000000000000b5       0x83 ./libs/libBSP.a(system_stm32f4xx.o)
+ .comment       0x00000000000000b5       0x83 ./libs/libBSP.a(ssd1963.o)
+ .comment       0x00000000000000b5       0x83 ./libs/libBSP.a(carme.o)
+ .comment       0x00000000000000b5       0x83 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .comment       0x00000000000000b5       0x83 ./libs/libBSP.a(ssd1963_lld.o)
+
+.debug_frame    0x0000000000000000      0xed0
+ .debug_frame   0x0000000000000000       0xb4 src/main.o
+ .debug_frame   0x00000000000000b4       0x20 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+ .debug_frame   0x00000000000000d4       0x34 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000108       0x2c /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+ .debug_frame   0x0000000000000134       0x34 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000168       0x50 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000000001b8      0x5b8 ./libs/libBSP.a(stm32f4xx_rcc.o)
+ .debug_frame   0x0000000000000770      0x19c ./libs/libBSP.a(stm32f4xx_gpio.o)
+ .debug_frame   0x000000000000090c       0x64 ./libs/libBSP.a(system_stm32f4xx.o)
+ .debug_frame   0x0000000000000970      0x198 ./libs/libBSP.a(ssd1963.o)
+ .debug_frame   0x0000000000000b08      0x178 ./libs/libBSP.a(carme.o)
+ .debug_frame   0x0000000000000c80      0x220 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+ .debug_frame   0x0000000000000ea0       0x30 ./libs/libBSP.a(ssd1963_lld.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    src/startup.o
+AHBPrescTable                                     ./libs/libBSP.a(system_stm32f4xx.o)
+BusFault_Handler                                  src/startup.o
+CAN1_RX0_IRQHandler                               src/startup.o
+CAN1_RX1_IRQHandler                               src/startup.o
+CAN1_SCE_IRQHandler                               src/startup.o
+CAN1_TX_IRQHandler                                src/startup.o
+CAN2_RX0_IRQHandler                               src/startup.o
+CAN2_RX1_IRQHandler                               src/startup.o
+CAN2_SCE_IRQHandler                               src/startup.o
+CAN2_TX_IRQHandler                                src/startup.o
+CARME_AGPIO_Get                                   ./libs/libBSP.a(carme.o)
+CARME_AGPIO_Set                                   ./libs/libBSP.a(carme.o)
+CARME_GPIO_Init                                   ./libs/libBSP.a(carme.o)
+                                                  ./libs/libBSP.a(ssd1963_lld.o)
+CARME_Init                                        ./libs/libBSP.a(carme.o)
+                                                  src/startup.o
+CARME_LED_Green_Reset                             ./libs/libBSP.a(carme.o)
+CARME_LED_Green_Set                               ./libs/libBSP.a(carme.o)
+CARME_LED_Red_Reset                               ./libs/libBSP.a(carme.o)
+CARME_LED_Red_Set                                 ./libs/libBSP.a(carme.o)
+CRYP_IRQHandler                                   src/startup.o
+DCMI_IRQHandler                                   src/startup.o
+DMA1_Stream0_IRQHandler                           src/startup.o
+DMA1_Stream1_IRQHandler                           src/startup.o
+DMA1_Stream2_IRQHandler                           src/startup.o
+DMA1_Stream3_IRQHandler                           src/startup.o
+DMA1_Stream4_IRQHandler                           src/startup.o
+DMA1_Stream5_IRQHandler                           src/startup.o
+DMA1_Stream6_IRQHandler                           src/startup.o
+DMA1_Stream7_IRQHandler                           src/startup.o
+DMA2_Stream0_IRQHandler                           src/startup.o
+DMA2_Stream1_IRQHandler                           src/startup.o
+DMA2_Stream2_IRQHandler                           src/startup.o
+DMA2_Stream3_IRQHandler                           src/startup.o
+DMA2_Stream4_IRQHandler                           src/startup.o
+DMA2_Stream5_IRQHandler                           src/startup.o
+DMA2_Stream6_IRQHandler                           src/startup.o
+DMA2_Stream7_IRQHandler                           src/startup.o
+DebugMon_Handler                                  src/startup.o
+Default_Handler                                   src/startup.o
+ETH_IRQHandler                                    src/startup.o
+ETH_WKUP_IRQHandler                               src/startup.o
+EXTI0_IRQHandler                                  src/startup.o
+EXTI15_10_IRQHandler                              src/startup.o
+EXTI1_IRQHandler                                  src/startup.o
+EXTI2_IRQHandler                                  src/startup.o
+EXTI3_IRQHandler                                  src/startup.o
+EXTI4_IRQHandler                                  src/startup.o
+EXTI9_5_IRQHandler                                src/startup.o
+FLASH_IRQHandler                                  src/startup.o
+FPU_IRQHandler                                    src/startup.o
+FSMC_ClearFlag                                    ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_ClearITPendingBit                            ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_GetECC                                       ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_GetFlagStatus                                ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_GetITStatus                                  ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_IRQHandler                                   src/startup.o
+FSMC_ITConfig                                     ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_NANDCmd                                      ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_NANDDeInit                                   ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_NANDECCCmd                                   ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_NANDInit                                     ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_NANDStructInit                               ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_NORSRAMCmd                                   ./libs/libBSP.a(stm32f4xx_fsmc.o)
+                                                  ./libs/libBSP.a(carme.o)
+FSMC_NORSRAMDeInit                                ./libs/libBSP.a(stm32f4xx_fsmc.o)
+                                                  ./libs/libBSP.a(carme.o)
+FSMC_NORSRAMInit                                  ./libs/libBSP.a(stm32f4xx_fsmc.o)
+                                                  ./libs/libBSP.a(carme.o)
+FSMC_NORSRAMStructInit                            ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_PCCARDCmd                                    ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_PCCARDDeInit                                 ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_PCCARDInit                                   ./libs/libBSP.a(stm32f4xx_fsmc.o)
+FSMC_PCCARDStructInit                             ./libs/libBSP.a(stm32f4xx_fsmc.o)
+GPIO_DeInit                                       ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  ./libs/libBSP.a(carme.o)
+GPIO_Init                                         ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  ./libs/libBSP.a(carme.o)
+                                                  src/main.o
+GPIO_PinAFConfig                                  ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  ./libs/libBSP.a(carme.o)
+GPIO_PinLockConfig                                ./libs/libBSP.a(stm32f4xx_gpio.o)
+GPIO_ReadInputData                                ./libs/libBSP.a(stm32f4xx_gpio.o)
+GPIO_ReadInputDataBit                             ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  ./libs/libBSP.a(carme.o)
+                                                  src/main.o
+GPIO_ReadOutputData                               ./libs/libBSP.a(stm32f4xx_gpio.o)
+GPIO_ReadOutputDataBit                            ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  ./libs/libBSP.a(carme.o)
+GPIO_ResetBits                                    ./libs/libBSP.a(stm32f4xx_gpio.o)
+GPIO_SetBits                                      ./libs/libBSP.a(stm32f4xx_gpio.o)
+GPIO_StructInit                                   ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  ./libs/libBSP.a(carme.o)
+                                                  src/main.o
+GPIO_ToggleBits                                   ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  src/main.o
+GPIO_Write                                        ./libs/libBSP.a(stm32f4xx_gpio.o)
+GPIO_WriteBit                                     ./libs/libBSP.a(stm32f4xx_gpio.o)
+                                                  ./libs/libBSP.a(ssd1963_lld.o)
+                                                  ./libs/libBSP.a(carme.o)
+HASH_RNG_IRQHandler                               src/startup.o
+HardFault_Handler                                 src/startup.o
+I2C1_ER_IRQHandler                                src/startup.o
+I2C1_EV_IRQHandler                                src/startup.o
+I2C2_ER_IRQHandler                                src/startup.o
+I2C2_EV_IRQHandler                                src/startup.o
+I2C3_ER_IRQHandler                                src/startup.o
+I2C3_EV_IRQHandler                                src/startup.o
+MemManage_Handler                                 src/startup.o
+NMI_Handler                                       src/startup.o
+OTG_FS_IRQHandler                                 src/startup.o
+OTG_FS_WKUP_IRQHandler                            src/startup.o
+OTG_HS_EP1_IN_IRQHandler                          src/startup.o
+OTG_HS_EP1_OUT_IRQHandler                         src/startup.o
+OTG_HS_IRQHandler                                 src/startup.o
+OTG_HS_WKUP_IRQHandler                            src/startup.o
+PVD_IRQHandler                                    src/startup.o
+PendSV_Handler                                    src/startup.o
+RCC_AHB1PeriphClockCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                                  ./libs/libBSP.a(carme.o)
+                                                  src/main.o
+RCC_AHB1PeriphClockLPModeCmd                      ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_AHB1PeriphResetCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                                  ./libs/libBSP.a(stm32f4xx_gpio.o)
+RCC_AHB2PeriphClockCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_AHB2PeriphClockLPModeCmd                      ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_AHB2PeriphResetCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphClockCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                                  ./libs/libBSP.a(carme.o)
+RCC_AHB3PeriphClockLPModeCmd                      ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphResetCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphClockCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphClockLPModeCmd                      ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphResetCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                                  ./libs/libBSP.a(stm32f4xx_usart.o)
+RCC_APB2PeriphClockCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                                  ./libs/libBSP.a(carme.o)
+RCC_APB2PeriphClockLPModeCmd                      ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_APB2PeriphResetCmd                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                                  ./libs/libBSP.a(stm32f4xx_usart.o)
+RCC_AdjustHSICalibrationValue                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_BackupResetCmd                                ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_ClearFlag                                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_ClearITPendingBit                             ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_ClockSecuritySystemCmd                        ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_DeInit                                        ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_GetClocksFreq                                 ./libs/libBSP.a(stm32f4xx_rcc.o)
+                                                  ./libs/libBSP.a(stm32f4xx_usart.o)
+RCC_GetFlagStatus                                 ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_GetITStatus                                   ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_GetSYSCLKSource                               ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_HCLKConfig                                    ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_HSEConfig                                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_HSICmd                                        ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_I2SCLKConfig                                  ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_IRQHandler                                    src/startup.o
+RCC_ITConfig                                      ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_LSEConfig                                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_LSICmd                                        ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_LTDCCLKDivConfig                              ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_MCO1Config                                    ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_MCO2Config                                    ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PCLK1Config                                   ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PCLK2Config                                   ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PLLCmd                                        ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PLLConfig                                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PLLI2SCmd                                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PLLI2SConfig                                  ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PLLSAICmd                                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_PLLSAIConfig                                  ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_RTCCLKCmd                                     ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_RTCCLKConfig                                  ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_SAIBlockACLKConfig                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_SAIBlockBCLKConfig                            ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_SAIPLLI2SClkDivConfig                         ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_SAIPLLSAIClkDivConfig                         ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_SYSCLKConfig                                  ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_TIMCLKPresConfig                              ./libs/libBSP.a(stm32f4xx_rcc.o)
+RCC_WaitForHSEStartUp                             ./libs/libBSP.a(stm32f4xx_rcc.o)
+RTC_Alarm_IRQHandler                              src/startup.o
+RTC_WKUP_IRQHandler                               src/startup.o
+Reset_Handler                                     src/startup.o
+SDIO_IRQHandler                                   src/startup.o
+SPI1_IRQHandler                                   src/startup.o
+SPI2_IRQHandler                                   src/startup.o
+SPI3_IRQHandler                                   src/startup.o
+SSD1963_FillArea                                  ./libs/libBSP.a(ssd1963.o)
+                                                  src/main.o
+SSD1963_GetDeviceDescriptorBlock                  ./libs/libBSP.a(ssd1963.o)
+SSD1963_Init                                      ./libs/libBSP.a(ssd1963.o)
+                                                  src/main.o
+SSD1963_LLD_Init                                  ./libs/libBSP.a(ssd1963_lld.o)
+                                                  ./libs/libBSP.a(ssd1963.o)
+SSD1963_ReadPixel                                 ./libs/libBSP.a(ssd1963.o)
+SSD1963_SetArea                                   ./libs/libBSP.a(ssd1963.o)
+SSD1963_SetTearingCfg                             ./libs/libBSP.a(ssd1963.o)
+SSD1963_WriteArea                                 ./libs/libBSP.a(ssd1963.o)
+SSD1963_WritePixel                                ./libs/libBSP.a(ssd1963.o)
+SVC_Handler                                       src/startup.o
+SysTick_Handler                                   src/startup.o
+SystemCoreClock                                   ./libs/libBSP.a(system_stm32f4xx.o)
+SystemCoreClockUpdate                             ./libs/libBSP.a(system_stm32f4xx.o)
+SystemInit                                        ./libs/libBSP.a(system_stm32f4xx.o)
+                                                  src/startup.o
+TAMP_STAMP_IRQHandler                             src/startup.o
+TIM1_BRK_TIM9_IRQHandler                          src/startup.o
+TIM1_CC_IRQHandler                                src/startup.o
+TIM1_TRG_COM_TIM11_IRQHandler                     src/startup.o
+TIM1_UP_TIM10_IRQHandler                          src/startup.o
+TIM2_IRQHandler                                   src/startup.o
+TIM3_IRQHandler                                   src/startup.o
+TIM4_IRQHandler                                   src/startup.o
+TIM5_IRQHandler                                   src/startup.o
+TIM6_DAC_IRQHandler                               src/startup.o
+TIM7_IRQHandler                                   src/startup.o
+TIM8_BRK_TIM12_IRQHandler                         src/startup.o
+TIM8_CC_IRQHandler                                src/startup.o
+TIM8_TRG_COM_TIM14_IRQHandler                     src/startup.o
+TIM8_UP_TIM13_IRQHandler                          src/startup.o
+UART4_IRQHandler                                  src/startup.o
+UART5_IRQHandler                                  src/startup.o
+USART1_IRQHandler                                 src/startup.o
+USART2_IRQHandler                                 src/startup.o
+USART3_IRQHandler                                 src/startup.o
+USART6_IRQHandler                                 src/startup.o
+USART_ClearFlag                                   ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_ClearITPendingBit                           ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_ClockInit                                   ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_ClockStructInit                             ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_Cmd                                         ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_DMACmd                                      ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_DeInit                                      ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_GetFlagStatus                               ./libs/libBSP.a(stm32f4xx_usart.o)
+                                                  src/syscalls.o
+USART_GetITStatus                                 ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_HalfDuplexCmd                               ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_ITConfig                                    ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_Init                                        ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_IrDACmd                                     ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_IrDAConfig                                  ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_LINBreakDetectLengthConfig                  ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_LINCmd                                      ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_OneBitMethodCmd                             ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_OverSampling8Cmd                            ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_ReceiveData                                 ./libs/libBSP.a(stm32f4xx_usart.o)
+                                                  src/syscalls.o
+USART_ReceiverWakeUpCmd                           ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_SendBreak                                   ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_SendData                                    ./libs/libBSP.a(stm32f4xx_usart.o)
+                                                  src/syscalls.o
+USART_SetAddress                                  ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_SetGuardTime                                ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_SetPrescaler                                ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_SmartCardCmd                                ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_SmartCardNACKCmd                            ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_StructInit                                  ./libs/libBSP.a(stm32f4xx_usart.o)
+USART_WakeUpConfig                                ./libs/libBSP.a(stm32f4xx_usart.o)
+UsageFault_Handler                                src/startup.o
+WWDG_IRQHandler                                   src/startup.o
+_Jv_RegisterClasses                               /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+_Min_Heap_Size                                    src/syscalls.o
+__bss_end__                                       /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+__bss_start__                                     /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+__call_exitprocs                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+__deregister_frame_info                           /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+__dso_handle                                      /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+__env                                             src/syscalls.o
+__fini_array_end                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+__fini_array_start                                /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+__init_array_end                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+__init_array_start                                /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+__libc_fini                                       /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+__libc_fini_array                                 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+__libc_init_array                                 /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+                                                  src/startup.o
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+__malloc_av_                                      /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+__malloc_current_mallinfo                         /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+__malloc_lock                                     /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+__malloc_max_sbrked_mem                           /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+__malloc_max_total_mem                            /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+__malloc_sbrk_base                                /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+__malloc_top_pad                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+__malloc_trim_threshold                           /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+__malloc_unlock                                   /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mlock.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+__preinit_array_end                               /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+__preinit_array_start                             /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+__register_exitproc                               /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+__register_frame_info                             /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crtbegin.o
+__stack                                           /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+_close                                            src/syscalls.o
+_ebss                                             src/startup.o
+_edata                                            src/startup.o
+_estack                                           src/startup.o
+_execve                                           src/syscalls.o
+_exit                                             src/syscalls.o
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+_fini                                             /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-fini.o)
+_fork                                             src/syscalls.o
+_free_r                                           /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+_fstat                                            src/syscalls.o
+_getpid                                           src/syscalls.o
+_global_impure_ptr                                /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+_impure_ptr                                       /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-impure.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+_init                                             /usr/lib/gcc/arm-none-eabi/4.9.2/armv7e-m/softfp/crti.o
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-init.o)
+_isatty                                           src/syscalls.o
+_kill                                             src/syscalls.o
+_link                                             src/syscalls.o
+_lseek                                            src/syscalls.o
+_mainCRTStartup                                   /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+_malloc_r                                         /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+_malloc_trim_r                                    /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+_open                                             src/syscalls.o
+_read                                             src/syscalls.o
+_reclaim_reent                                    /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+_sbrk                                             src/syscalls.o
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+_sbrk_r                                           /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-mallocr.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-freer.o)
+_sbss                                             src/startup.o
+_sdata                                            src/startup.o
+_sidata                                           src/startup.o
+_start                                            /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+_stat                                             src/syscalls.o
+_times                                            src/syscalls.o
+_unlink                                           src/syscalls.o
+_wait                                             src/syscalls.o
+_write                                            src/syscalls.o
+atexit                                            /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+cleanup_glue                                      /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+end                                               src/syscalls.o
+environ                                           src/syscalls.o
+errno                                             /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-reent.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-sbrkr.o)
+                                                  src/syscalls.o
+exit                                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-exit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+free                                              /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__call_atexit.o)
+g_pfnVectors                                      src/startup.o
+gpio                                              src/main.o
+hardware_init_hook                                /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+init_gpio                                         src/main.o
+initialise_monitor_handles                        src/syscalls.o
+main                                              src/main.o
+                                                  src/startup.o
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+malloc                                            /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-__atexit.o)
+memcpy                                            /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcpy.o)
+                                                  ./libs/libBSP.a(carme.o)
+memset                                            /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/libg.a(lib_a-memset.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+software_init_hook                                /usr/lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+vApplicationMallocFailedHook                      src/startup.o
+vApplicationStackOverflowHook                     src/startup.o

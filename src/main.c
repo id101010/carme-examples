@@ -20,7 +20,7 @@
  * MA  02110-1301, USA.
  *
  *****************************************************************************/
-#include <stm32f4xx.h>			
+#include <stm32f4xx.h>
 #include <carme.h>
 #include <lcd.h>
 #include <lcd_lld.h>
@@ -31,70 +31,70 @@ GPIO_InitTypeDef gpio;
 void init_gpio(void)
 {
     // Set clocks
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA | RCC_AHB1Periph_GPIOC, ENABLE);
-	
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA | RCC_AHB1Periph_GPIOC, ENABLE);
+
     // OUT0: GPIOA, GPIO_Pin_0
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_0;
-	gpio.GPIO_Mode 	    = GPIO_Mode_OUT;
-	gpio.GPIO_PuPd		= GPIO_PuPd_NOPULL;
-	GPIO_Init(GPIOA, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_0;
+    gpio.GPIO_Mode  = GPIO_Mode_OUT;
+    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIOA, &gpio);
 
     // OUT1: GPIOH, GPIO_Pin_11
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_11;
-	gpio.GPIO_Mode 	    = GPIO_Mode_OUT;
-	gpio.GPIO_PuPd		= GPIO_PuPd_NOPULL;
-	GPIO_Init(GPIOH, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_11;
+    gpio.GPIO_Mode  = GPIO_Mode_OUT;
+    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIOH, &gpio);
     
     // OUT2: GPIOH, GPIO_Pin_12
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_12;
-	gpio.GPIO_Mode 	    = GPIO_Mode_OUT;
-	gpio.GPIO_PuPd		= GPIO_PuPd_NOPULL;
-	GPIO_Init(GPIOH, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_12;
+    gpio.GPIO_Mode  = GPIO_Mode_OUT;
+    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIOH, &gpio);
     
     // OUT3: GPIOB, GPIO_Pin_8
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_8;
-	gpio.GPIO_Mode 	    = GPIO_Mode_OUT;
-	gpio.GPIO_PuPd		= GPIO_PuPd_NOPULL;
-	GPIO_Init(GPIOB, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_8;
+    gpio.GPIO_Mode  = GPIO_Mode_OUT;
+    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIOB, &gpio);
     
     // T0: GPIOC, GPIO_Pin_7
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_7;
-	gpio.GPIO_Mode 	    = GPIO_Mode_IN;
-	gpio.GPIO_PuPd		= GPIO_PuPd_UP;
-	GPIO_Init(GPIOC, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_7;
+    gpio.GPIO_Mode  = GPIO_Mode_IN;
+    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
+    GPIO_Init(GPIOC, &gpio);
     
     // T0: GPIOB, GPIO_Pin_15
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_15;
-	gpio.GPIO_Mode 	    = GPIO_Mode_IN;
-	gpio.GPIO_PuPd		= GPIO_PuPd_UP;
-	GPIO_Init(GPIOB, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_15;
+    gpio.GPIO_Mode  = GPIO_Mode_IN;
+    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
+    GPIO_Init(GPIOB, &gpio);
     
     // T0: GPIOB, GPIO_Pin_14
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_14;
-	gpio.GPIO_Mode 	    = GPIO_Mode_IN;
-	gpio.GPIO_PuPd		= GPIO_PuPd_UP;
-	GPIO_Init(GPIOB, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_14;
+    gpio.GPIO_Mode  = GPIO_Mode_IN;
+    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
+    GPIO_Init(GPIOB, &gpio);
     
     // T0: GPIOI, GPIO_Pin_0
     GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin		= GPIO_Pin_0;
-	gpio.GPIO_Mode 	    = GPIO_Mode_IN;
-	gpio.GPIO_PuPd		= GPIO_PuPd_UP;
-	GPIO_Init(GPIOI, &gpio);
+    gpio.GPIO_Pin   = GPIO_Pin_0;
+    gpio.GPIO_Mode  = GPIO_Mode_IN;
+    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
+    GPIO_Init(GPIOI, &gpio);
 }
 
 int main(void)
 {
-	LCD_Init();
-	init_gpio();
-	
+    LCD_Init();
+    init_gpio();
+
     LCD_Clear(GUI_COLOR_BLUE);
 
     char new0 = 0, new1 = 0, new2 = 0, new3 = 0; // new state
@@ -137,8 +137,8 @@ int main(void)
         }
 
         old3 = new3;
-	}
+    }
 
-	return 0;
+    return 0;
 }
 
