@@ -1,5 +1,5 @@
 /*****************************************************************************
- * Copyright &copy; 2013, Bern University of Applied Sciences.
+ * Copyright &copy; 2013, Aaron Schmocker.
  * All rights reserved.
  *
  * ##### GNU GENERAL PUBLIC LICENSE
@@ -48,7 +48,6 @@ uint16_t colors[] = {
 volatile unsigned char* LED = (volatile unsigned char*)0x6C000200;
 volatile unsigned char* SWITCH = (volatile unsigned char*)0x6C000400;
 GPIO_InitTypeDef g;
-
 
 void init_gpio(void)
 {

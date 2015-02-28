@@ -1,5 +1,5 @@
 /*****************************************************************************
- * Copyright &copy; 2013, Bern University of Applied Sciences.
+ * Copyright &copy; 2013, Aaron Schmocker.
  * All rights reserved.
  *
  * ##### GNU GENERAL PUBLIC LICENSE
@@ -26,119 +26,132 @@
 #include <lcd_lld.h>
 #include <color.h>
 
-GPIO_InitTypeDef gpio;
+#define GPIO_INPUT	0
+#define GPIO_OUTPUT 1
+#define NULL		0
 
-void init_gpio(void)
+// Thanks to t-moe
+typedef struct pin_s {
+	GPIO_TypeDef *GPIO;
+	uint16_t number;
+	uint8_t	purpose;
+} pin_t;
+
+pin_t *create_gpio(GPIO_TypeDef *GPIO, uint16_t number, uint8_t purpose)
 {
-    // Set clocks
-    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA | RCC_AHB1Periph_GPIOC, ENABLE);
+	GPIO_InitTypeDef g;
+	GPIO_StructInit(&g);
 
-    // OUT0: GPIOA, GPIO_Pin_0
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_0;
-    gpio.GPIO_Mode  = GPIO_Mode_OUT;
-    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOA, &gpio);
+	if(!purpose){ 	// Input
+		g.GPIO_Mode		=	GPIO_Mode_IN;
+		g.GPIO_OType	=	GPIO_OType_OD;
+		g.GPIO_Pin		=	number;
+		g.GPIO_PuPd		=	GPIO_PuPd_UP;
+		g.GPIO_Speed	=	GPIO_Low_Speed;
+	} else { 		// output
+		g.GPIO_Mode		=	GPIO_Mode_OUT;
+		g.GPIO_OType	=	GPIO_OType_PP;
+		g.GPIO_Pin		=	number;
+		g.GPIO_PuPd		=	GPIO_PuPd_NOPULL;
+		g.GPIO_Speed	=	GPIO_Low_Speed;
+	}
 
-    // OUT1: GPIOH, GPIO_Pin_11
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_11;
-    gpio.GPIO_Mode  = GPIO_Mode_OUT;
-    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOH, &gpio);
+	GPIO_Init(GPIO, &g);
+
+	pin_t *pin = malloc(sizeof(pin_t));
+
+	if(pin == NULL){ // out of memory
+		return 0;
+	}
+
+	pin->GPIO 		= 	GPIO;
+	pin->number 	= 	number;
+	pin->purpose 	= 	purpose;
+
+	return pin;
+}
+
+uint8_t read_gpio(pin_t *pin)
+{
+    uint8_t pinstate = 0;
+
+    pinstate = GPIO_ReadInputDataBit(pin->GPIO, pin->number);
     
-    // OUT2: GPIOH, GPIO_Pin_12
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_12;
-    gpio.GPIO_Mode  = GPIO_Mode_OUT;
-    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOH, &gpio);
-    
-    // OUT3: GPIOB, GPIO_Pin_8
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_8;
-    gpio.GPIO_Mode  = GPIO_Mode_OUT;
-    gpio.GPIO_PuPd  = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOB, &gpio);
-    
-    // T0: GPIOC, GPIO_Pin_7
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_7;
-    gpio.GPIO_Mode  = GPIO_Mode_IN;
-    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
-    GPIO_Init(GPIOC, &gpio);
-    
-    // T0: GPIOB, GPIO_Pin_15
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_15;
-    gpio.GPIO_Mode  = GPIO_Mode_IN;
-    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
-    GPIO_Init(GPIOB, &gpio);
-    
-    // T0: GPIOB, GPIO_Pin_14
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_14;
-    gpio.GPIO_Mode  = GPIO_Mode_IN;
-    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
-    GPIO_Init(GPIOB, &gpio);
-    
-    // T0: GPIOI, GPIO_Pin_0
-    GPIO_StructInit(&gpio);
-    gpio.GPIO_Pin   = GPIO_Pin_0;
-    gpio.GPIO_Mode  = GPIO_Mode_IN;
-    gpio.GPIO_PuPd  = GPIO_PuPd_UP;
-    GPIO_Init(GPIOI, &gpio);
+    return pinstate;
+}
+
+void set_gpio(pin_t *pin)
+{
+    GPIO_SetBits(pin->GPIO, pin->number);
+}
+
+void toggle_gpio(pin_t *pin)
+{
+    GPIO_ToggleBits(pin->GPIO, pin->number);
 }
 
 int main(void)
 {
+	// Some blue color looks nice
     LCD_Init();
-    init_gpio();
-
     LCD_Clear(GUI_COLOR_BLUE);
 
-    char new0 = 0, new1 = 0, new2 = 0, new3 = 0; // new state
-    char old0 = 0, old1 = 0, old2 = 0, old3 = 0; // old state
+    // Inputs
+    pin_t *led0 = create_gpio(GPIOA, GPIO_Pin_0, GPIO_OUTPUT);
+    pin_t *led1 = create_gpio(GPIOH, GPIO_Pin_11, GPIO_OUTPUT);
+    pin_t *led2 = create_gpio(GPIOH, GPIO_Pin_12, GPIO_OUTPUT);
+    pin_t *led3 = create_gpio(GPIOB, GPIO_Pin_8, GPIO_OUTPUT);
+
+    // Outputs
+    pin_t *btn0 = create_gpio(GPIOC, GPIO_Pin_7, GPIO_INPUT);
+    pin_t *btn1 = create_gpio(GPIOB, GPIO_Pin_15, GPIO_INPUT);
+    pin_t *btn2 = create_gpio(GPIOB, GPIO_Pin_14, GPIO_INPUT);
+    pin_t *btn3 = create_gpio(GPIOI, GPIO_Pin_0, GPIO_INPUT);
+
+    // State variables
+    uint8_t new = 0;	// newest state
+    uint8_t old = 0;	// previous state
+    uint8_t edg = 0;	// rising edge
 
     while(1){
 
-        // -----------------------------------------------------  T0
-        new0 = GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_7);
-
-        if(new0 != old0 && old0 == 0){
-            GPIO_ToggleBits(GPIOA, GPIO_Pin_0);
-        }
-
-        old0 = new0;
+    	// Get the current states of the buttons and merge them
+        new =   read_gpio(btn0) 		|
+                read_gpio(btn1) << 1 	|
+                read_gpio(btn2) << 2 	|
+                read_gpio(btn3) << 3;
         
-        // ------------------------------------------------------ T1
-        new1 = GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_15);
+        edg = (new ^ old) & new;	// detect positive edge
+        old = new;
 
-        if(new1 != old1 && old1 == 0){
-            GPIO_ToggleBits(GPIOH, GPIO_Pin_11);
+        if(edg & 0b0001){ 			// button 1 changed
+            toggle_gpio(led0);
         }
 
-        old1 = new1;
-
-        // ------------------------------------------------------ T2
-        new2 = GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_14);
-
-        if(new2 != old2 && old2 == 0){
-            GPIO_ToggleBits(GPIOH, GPIO_Pin_12);
+        if(edg & 0b0010){			// button 2 changed
+            toggle_gpio(led1);
         }
 
-        old2 = new2;
-        
-        // ------------------------------------------------------ T3
-        new3 = GPIO_ReadInputDataBit(GPIOI, GPIO_Pin_0);
-
-        if(new3 != old3 && old3 == 0){
-            GPIO_ToggleBits(GPIOB, GPIO_Pin_8);
+        if(edg & 0b0100){			// button 3 changed
+            toggle_gpio(led2);
         }
 
-        old3 = new3;
+        if(edg & 0b1000){ 			// button 4 changed
+            toggle_gpio(led3);
+        }
     }
+
+    // clean up the memory
+    free(led0);
+    free(led1);
+    free(led2);
+    free(led3);
+    free(btn0);
+    free(btn1);
+    free(btn2);
+    free(btn3);
 
     return 0;
 }
+
 
