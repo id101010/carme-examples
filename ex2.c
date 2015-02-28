@@ -26,49 +26,49 @@
 #include <lcd_lld.h>
 #include <color.h>
 
-#define GPIO_INPUT	0
+#define GPIO_INPUT  0
 #define GPIO_OUTPUT 1
-#define NULL		0
+#define NULL        0
 
 // Thanks to t-moe
 typedef struct pin_s {
-	GPIO_TypeDef *GPIO;
-	uint16_t number;
-	uint8_t	purpose;
+    GPIO_TypeDef *GPIO;
+    uint16_t number;
+    uint8_t purpose;
 } pin_t;
 
 pin_t *create_gpio(GPIO_TypeDef *GPIO, uint16_t number, uint8_t purpose)
 {
-	GPIO_InitTypeDef g;
-	GPIO_StructInit(&g);
+    GPIO_InitTypeDef g;
+    GPIO_StructInit(&g);
 
-	if(!purpose){ 	// Input
-		g.GPIO_Mode		=	GPIO_Mode_IN;
-		g.GPIO_OType	=	GPIO_OType_OD;
-		g.GPIO_Pin		=	number;
-		g.GPIO_PuPd		=	GPIO_PuPd_UP;
-		g.GPIO_Speed	=	GPIO_Low_Speed;
-	} else { 		// output
-		g.GPIO_Mode		=	GPIO_Mode_OUT;
-		g.GPIO_OType	=	GPIO_OType_PP;
-		g.GPIO_Pin		=	number;
-		g.GPIO_PuPd		=	GPIO_PuPd_NOPULL;
-		g.GPIO_Speed	=	GPIO_Low_Speed;
-	}
+    if(!purpose){   // Input
+        g.GPIO_Mode     =   GPIO_Mode_IN;
+        g.GPIO_OType    =   GPIO_OType_OD;
+        g.GPIO_Pin      =   number;
+        g.GPIO_PuPd     =   GPIO_PuPd_UP;
+        g.GPIO_Speed    =   GPIO_Low_Speed;
+    } else {        // output
+        g.GPIO_Mode     =   GPIO_Mode_OUT;
+        g.GPIO_OType    =   GPIO_OType_PP;
+        g.GPIO_Pin      =   number;
+        g.GPIO_PuPd     =   GPIO_PuPd_NOPULL;
+        g.GPIO_Speed    =   GPIO_Low_Speed;
+    }
 
-	GPIO_Init(GPIO, &g);
+    GPIO_Init(GPIO, &g);
 
-	pin_t *pin = malloc(sizeof(pin_t));
+    pin_t *pin = malloc(sizeof(pin_t));
 
-	if(pin == NULL){ // out of memory
-		return 0;
-	}
+    if(pin == NULL){ // out of memory
+        return 0;
+    }
 
-	pin->GPIO 		= 	GPIO;
-	pin->number 	= 	number;
-	pin->purpose 	= 	purpose;
+    pin->GPIO       =   GPIO;
+    pin->number     =   number;
+    pin->purpose    =   purpose;
 
-	return pin;
+    return pin;
 }
 
 uint8_t read_gpio(pin_t *pin)
@@ -92,7 +92,7 @@ void toggle_gpio(pin_t *pin)
 
 int main(void)
 {
-	// Some blue color looks nice
+    // Some blue color looks nice
     LCD_Init();
     LCD_Clear(GUI_COLOR_BLUE);
 
@@ -109,34 +109,34 @@ int main(void)
     pin_t *btn3 = create_gpio(GPIOI, GPIO_Pin_0, GPIO_INPUT);
 
     // State variables
-    uint8_t new = 0;	// newest state
-    uint8_t old = 0;	// previous state
-    uint8_t edg = 0;	// rising edge
+    uint8_t new = 0;    // newest state
+    uint8_t old = 0;    // previous state
+    uint8_t edg = 0;    // rising edge
 
     while(1){
 
-    	// Get the current states of the buttons and merge them
-        new =   read_gpio(btn0) 		|
-                read_gpio(btn1) << 1 	|
-                read_gpio(btn2) << 2 	|
+        // Get the current states of the buttons and merge them
+        new =   read_gpio(btn0)         |
+                read_gpio(btn1) << 1    |
+                read_gpio(btn2) << 2    |
                 read_gpio(btn3) << 3;
         
-        edg = (new ^ old) & new;	// detect positive edge
+        edg = (new ^ old) & new;    // detect positive edge
         old = new;
 
-        if(edg & 0b0001){ 			// button 1 changed
+        if(edg & 0b0001){           // button 1 changed
             toggle_gpio(led0);
         }
 
-        if(edg & 0b0010){			// button 2 changed
+        if(edg & 0b0010){           // button 2 changed
             toggle_gpio(led1);
         }
 
-        if(edg & 0b0100){			// button 3 changed
+        if(edg & 0b0100){           // button 3 changed
             toggle_gpio(led2);
         }
 
-        if(edg & 0b1000){ 			// button 4 changed
+        if(edg & 0b1000){           // button 4 changed
             toggle_gpio(led3);
         }
     }
