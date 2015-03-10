@@ -1,5 +1,5 @@
 /*****************************************************************************
- * Copyright &copy; 2013, Aaron
+ * Copyright &copy; 2013, Aaron Schmocker
  * All rights reserved.
  *
  * ##### GNU GENERAL PUBLIC LICENSE
@@ -20,7 +20,7 @@
  * MA  02110-1301, USA.
  *
  *****************************************************************************/
-#include <stm32f4xx.h>				                    // Processor STM32F407IG
+#include <stm32f4xx.h>                                  // Processor STM32F407IG
 
 #define LED (*(volatile unsigned char*)(0x6C000000))
 int ledStatus = 0;
@@ -52,7 +52,7 @@ int main(void)
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM6, ENABLE); // Enable clock for TIM6
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM7, ENABLE); // Enable clock for TIM7
 
-	LED = 0b00000001;
+    LED = 0b00000001;
 
     __disable_irq();
 
@@ -77,9 +77,10 @@ int main(void)
     TIM_Cmd(TIM6, ENABLE);                               // Enable both timers
     TIM_Cmd(TIM7, ENABLE);
 
-	while(1){
-	}
+    while(1){
+        ;
+    }
 
-	return 0;
+    return 0;
 }
 
